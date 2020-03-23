@@ -1,0 +1,3 @@
+This is a shader in GLSL made to look like realistic glass and should work with different kinds of models and 3D environments with a cubemap.
+The shader is made in consideration of Snell's and Fresnell's laws and with  Schlick's approximation.
+
