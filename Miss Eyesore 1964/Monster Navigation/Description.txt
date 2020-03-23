@@ -1,0 +1,2 @@
+The monster uses A* to navigate the level. She has a special stair-system to overcome problems with getting to other floors, since she will first  target a staircase node before finding a complete path if the end destination is above or below her.
+There are special rooms and nodes in order to make her behavior more livelike, for actions such as searching the interest nodes in the room where she heard the player, or randomly walking to different nodes of interest in the level.

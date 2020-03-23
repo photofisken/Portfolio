@@ -1,0 +1,4 @@
+These scripts do the main work on calculating the physics for a floating object. Arkimedes principle is used as basis for the physics and hence the main problem is calculating the object's volume so that it will work for any transform. 
+The solution for calculating the volume is to find all the vertices in an object and use their local position to find the surface area. A vertex is added in the middle of the volume that is under the waterlevel to make these triangles into tetrahedrons and thus making the space 3D and calculatable. 
+Both the volume  under the water and in the air is calculated to get the correct physics. A drag force is added as well.
+The solution to go through all the vertices is however not optimal, if more correct, than other solutions. It is performance demanding when the vertices are too many, and  thus other solutions, like using an AABB to calculate volume, could prove more efficient while only losing a little correctness.
